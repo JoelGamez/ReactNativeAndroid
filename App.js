@@ -9,6 +9,9 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import  Title from './components/title';
+import CustomBlinkingTxt from './components/blinkingtext';
+
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -21,12 +24,13 @@ type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
-      <View style={styles.container}>
-       
-        <Text style={styles.gameTitle}>PACHANGA THE GAME!!!!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
+     
+        <View style={styles.container}> 
+          <Title/>
+        </View>
+
+   
+      
     );
   }
 }
@@ -47,6 +51,8 @@ const styles = StyleSheet.create({
     color: 'yellow',
     fontWeight: 'bold',
     fontSize: 35,
+    top: -180,
+
   },
   
   instructions: {
