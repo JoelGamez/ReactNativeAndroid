@@ -10,7 +10,7 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import  Title from './components/title';
-import CustomBlinkingTxt from './components/blinkingtext';
+import BlinkingClass from './components/blinkingclass';
 
 
 const instructions = Platform.select({

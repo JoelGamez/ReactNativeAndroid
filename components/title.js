@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import BlinkingClass from './blinkingclass';
 
 
 
@@ -8,7 +9,8 @@ export default class Title extends Component<Props> {
     render() {
       return (
         <View style={styles.container}> 
-          <Text style={styles.gameTitle}>PACHANGA THE GAME!!!!</Text>
+          <BlinkingClass style={styles.gameTitle} text='PACHANGA THE GAME!!!!' />
+          {/* <Text style={styles.gameTitle}>PACHANGA THE GAME!!!!</Text> */}
         </View>
       );
     }
